@@ -104,7 +104,7 @@ echo "/etc/network/interfaces updated with IP $NODEIP and gateway $GATEWAY"
 # During Proxmox install, it prompts for overwriting some config files, nope.
 # ---------------------------------------------------------------------------
 
-DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confold" install -y proxmox-ve pve-manager qemu-server pve-cluster
+DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confold" install -y proxmox-ve pve-manager qemu-server pve-cluster ceph
 
 
 # Voilà
@@ -116,7 +116,7 @@ echo "That's it! After this node reboots, Proxmox should be accessible at:"
 echo ""
 echo "   https://$NODEIP:8006"
 echo ""
-echo "First of all, connect to Proxmox, select Linux PAM as the realm, and create a Linux bridge."
+echo "Connect to Proxmox and select Linux PAM as the realm."
 echo ""
 
 DELAY=10
