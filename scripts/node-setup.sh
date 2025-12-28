@@ -48,7 +48,7 @@ sudo sed -i -E "s|^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+[[:space:]]+$NODENAME\$|$NODEIP
 echo "/etc/hosts updated: $NODENAME => $NODEIP"
 
 
-# Set the root password
+# Set the root password (change that before launching the script)
 # ---------------------
 
 ROOTPW="root is the root password"
@@ -116,8 +116,10 @@ echo "That's it! After this node reboots, Proxmox should be accessible at:"
 echo ""
 echo "   https://$NODEIP:8006"
 echo ""
+echo "First of all, connect to Proxmox, select Linux PAM as the realm, and create a Linux bridge."
+echo ""
 
-DELAY=5
+DELAY=10
 echo "/!\ System will reboot in $DELAY seconds. Press Ctrl+C to cancel."
 sleep "$DELAY"
 reboot
