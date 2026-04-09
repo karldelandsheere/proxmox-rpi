@@ -1,4 +1,15 @@
 # Nuage: my RPI cluster on PXVIRT for a tiny home cloud
+
+## This project has moved
+
+This repository is now maintained at
+[codeberg.org/karldelandsheere/proxmox-rpi](https://codeberg.org/karldelandsheere/proxmox-rpi).
+
+This GitHub mirror may be out of date. Please file issues and
+contributions on Codeberg.
+
+--------
+
 This repo is both my toolbox for my RPI5 based Proxmox cluster and a way of documenting the process so I don't tear the f***ing place down next time I make one from scratch. This is a work in progress (as all homelabs are) and things can change/break pretty much all the time. Also, most of the time I have no idea of what I'm doing exactly.
 
 Any way, I'm welcoming feedback and ideas. I'm here to learn!
